@@ -1,6 +1,6 @@
 {% set name = "grunt" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "71ad5366879caeacd55fdf75faa1b1ee2eb9a28ec95f2601a4902c42dc1200a4" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "1df41d04b7af9c35a287f7f20e6b82ff674d4739353d739594f7925ad8bbb736" %}
 
 package:
   name: {{ name|lower }}
