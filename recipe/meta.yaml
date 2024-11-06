@@ -1,6 +1,6 @@
 {% set name = "grunt" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "da6b181efc81ef19d6d04a5e83a090eeb7b6b58464d6ad1b1ef47a86a7730141" %}
+{% set version = "1.3.0" %}
+{% set sha256 = "0be24d5a20b18a5086bf8c23d4dc5da4a3ef3913198d4f09a48d4dde415d0edf" %}
 
 package:
   name: {{ name|lower }}
@@ -20,13 +20,13 @@ build:
 requirements:
   build:
     - nodejs
-  
+
 test:
   commands:
     - npm list -g grunt
   requires:
     - nodejs
-   
+
 
 about:
   home: https://github.com/gruntjs/grunt
