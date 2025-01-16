@@ -1,38 +1,36 @@
 {% set name = "grunt" %}
-{% set version = "1.0.4" %}
-{% set sha256 = "da6b181efc81ef19d6d04a5e83a090eeb7b6b58464d6ad1b1ef47a86a7730141" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/gruntjs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://registry.npmjs.org/grunt/-/grunt-{{ version }}.tgz
+  sha256: a65971e59524569f8b984f0822706ce00cee340cc78eea34067611316a53c706
 
 build:
   number: 0
   noarch: generic
-  script: |
-    tgz=$(npm pack)
-    npm install -g $tgz
 
 requirements:
   build:
     - nodejs
+    - pnpm
+    - pnpm-licenses
+  run:
+    - nodejs
   
 test:
   commands:
-    - npm list -g grunt
-  requires:
-    - nodejs
-   
+    - grunt --help
 
 about:
   home: https://github.com/gruntjs/grunt
   license: MIT
-  license_family: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - third-party-licenses.txt
   summary: 'Grunt: The JavaScript Task Runner '
   description: |
     The JavaScript Task Runner 
@@ -41,5 +39,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - cshaley
     - sannykr
