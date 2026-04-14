@@ -7,7 +7,7 @@ Home: https://github.com/gruntjs/grunt
 
 Package license: MIT
 
-Summary: Grunt: The JavaScript Task Runner 
+Summary: Grunt: The JavaScript Task Runner
 
 Development: https://github.com/gruntjs/grunt
 
@@ -19,11 +19,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=2976&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/grunt-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
