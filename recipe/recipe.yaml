@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.6.2"
+  version: "1.6.3"
 
 package:
   name: grunt
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/grunt/-/grunt-${{ version }}.tgz
-  sha256: a782f2aaa2e2e13a432525c35072fbf0c11295079c2722d90ff9a322ec5b5d1a
+  sha256: a4c86f1787007d1a72fdd6fa767fef7761f6f123fd8747a20740a269c89dbf72
 
 build:
   number: 0
